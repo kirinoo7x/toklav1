@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "555779557260",
+    "firebase_url": "https://tonkla-692dd.firebaseio.com",
+    "project_id": "tonkla-692dd",
+    "storage_bucket": "tonkla-692dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555779557260:android:cde05e12761ec2050978a9",
+        "android_client_info": {
+          "package_name": "com.tiwlynaja.admin.konklav1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555779557260-5hf3vj7ln8auauetbit2kjh12gsg9lpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tiwlynaja.admin.konklav1",
+            "certificate_hash": "eda7269981960265396a50ecd1728485ca3921a2"
+          }
+        },
+        {
+          "client_id": "555779557260-srfcpvq1550i0ojceoa6sovl1voe9so8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_od7rlDtBH_Ab3b_qxhaVyEzCJpT-QYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555779557260-srfcpvq1550i0ojceoa6sovl1voe9so8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chemical.Calendar_Noti">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="417dp"
+        android:layout_height="181dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Plan">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="414dp"
+            android:layout_height="192dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.137"
+            app:srcCompat="@mipmap/but" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="155dp"
+            android:layout_height="147dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51"
+            app:srcCompat="@mipmap/logo5" />
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="43dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="356dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:text="Calender Farm"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.128" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="NameFarm :: "
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:text="Address ::"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/addressfarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/namefarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="411dp"
+        android:layout_height="598dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="393dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/but6" />
+
+            <TextView
+                android:id="@+id/introduce1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintEnd_toEndOf="@+id/imageView11"
+                app:layout_constraintHorizontal_bias="0.355"
+                app:layout_constraintStart_toStartOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/imageView11"
+                app:layout_constraintVertical_bias="0.225" />
+
+            <TextView
+                android:id="@+id/no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="dd"
+                app:layout_constraintBottom_toBottomOf="@+id/no1"
+                app:layout_constraintStart_toEndOf="@+id/no1"
+                app:layout_constraintTop_toTopOf="@+id/no1" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="mm"
+                app:layout_constraintBottom_toBottomOf="@+id/day"
+                app:layout_constraintStart_toEndOf="@+id/day"
+                app:layout_constraintTop_toTopOf="@+id/day"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="yy"
+                app:layout_constraintBottom_toBottomOf="@+id/month"
+                app:layout_constraintStart_toEndOf="@+id/month"
+                app:layout_constraintTop_toTopOf="@+id/month" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/textView16"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="394dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.411"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                app:srcCompat="@drawable/but7" />
+
+            <TextView
+                android:id="@+id/introduce2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Please Wait"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.355"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce2"
+                app:layout_constraintVertical_bias="0.008" />
+
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toTopOf="@+id/textView17"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/dd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no2"
+                app:layout_constraintStart_toEndOf="@+id/no2"
+                app:layout_constraintTop_toTopOf="@+id/no2" />
+
+            <TextView
+                android:id="@+id/mm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/dd2"
+                app:layout_constraintStart_toEndOf="@+id/dd2"
+                app:layout_constraintTop_toTopOf="@+id/dd2" />
+
+            <TextView
+                android:id="@+id/yy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintStart_toEndOf="@+id/mm2"
+                app:layout_constraintTop_toTopOf="@+id/mm2" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView16"
+                app:srcCompat="@drawable/but6" />
+
+            <TextView
+                android:id="@+id/introduce3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView25"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView25"
+                app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintStart_toEndOf="@+id/textView19"
+                app:layout_constraintTop_toTopOf="@+id/textView19"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView25"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/dd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no3"
+                app:layout_constraintStart_toEndOf="@+id/no3"
+                app:layout_constraintTop_toTopOf="@+id/no3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm3"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/dd3"
+                app:layout_constraintStart_toEndOf="@+id/dd3"
+                app:layout_constraintTop_toTopOf="@+id/dd3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/mm3"
+                app:layout_constraintStart_toEndOf="@+id/mm3"
+                app:layout_constraintTop_toTopOf="@+id/mm3"
+                app:layout_constraintVertical_bias="1.0" />
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25"
+                app:srcCompat="@drawable/but6" />
+
+            <TextView
+                android:id="@+id/introduce4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView26"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView26"
+                app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t"
+                app:layout_constraintStart_toEndOf="@+id/t"
+                app:layout_constraintTop_toTopOf="@+id/t"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView26"
+                app:layout_constraintTop_toBottomOf="@+id/t" />
+
+            <TextView
+                android:id="@+id/dd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no4"
+                app:layout_constraintStart_toEndOf="@+id/no4"
+                app:layout_constraintTop_toTopOf="@+id/no4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/dd4"
+                app:layout_constraintStart_toEndOf="@+id/dd4"
+                app:layout_constraintTop_toTopOf="@+id/dd4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/mm4"
+                app:layout_constraintStart_toEndOf="@+id/mm4"
+                app:layout_constraintTop_toTopOf="@+id/mm4"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--5-->
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26"
+                app:srcCompat="@drawable/but8" />
+
+            <TextView
+                android:id="@+id/introduce5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView27"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView27"
+                app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t5"
+                app:layout_constraintStart_toEndOf="@+id/t5"
+                app:layout_constraintTop_toTopOf="@+id/t5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView27"
+                app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+            <TextView
+                android:id="@+id/dd5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no5"
+                app:layout_constraintStart_toEndOf="@+id/no5"
+                app:layout_constraintTop_toTopOf="@+id/no5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm5"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/dd5"
+                app:layout_constraintStart_toEndOf="@+id/dd5"
+                app:layout_constraintTop_toTopOf="@+id/dd5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/mm5"
+                app:layout_constraintStart_toEndOf="@+id/mm5"
+                app:layout_constraintTop_toTopOf="@+id/mm5"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--6-->
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView27"
+                app:srcCompat="@drawable/but8" />
+
+            <TextView
+                android:id="@+id/introduce6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView28"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="@+id/imageView28"
+                app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t6"
+                app:layout_constraintStart_toEndOf="@+id/t6"
+                app:layout_constraintTop_toTopOf="@+id/t6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView28"
+                app:layout_constraintTop_toBottomOf="@+id/t6" />
+
+            <TextView
+                android:id="@+id/dd6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no6"
+                app:layout_constraintStart_toEndOf="@+id/no6"
+                app:layout_constraintTop_toTopOf="@+id/no6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm6"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/dd6"
+                app:layout_constraintStart_toEndOf="@+id/dd6"
+                app:layout_constraintTop_toTopOf="@+id/dd6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/mm6"
+                app:layout_constraintStart_toEndOf="@+id/mm6"
+                app:layout_constraintTop_toTopOf="@+id/mm6"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--7-->
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView28"
+                app:srcCompat="@drawable/but12" />
+
+            <TextView
+                android:id="@+id/introduce7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pleae Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+                app:layout_constraintEnd_toEndOf="@+id/imageView29"
+                app:layout_constraintHorizontal_bias="0.341"
+                app:layout_constraintStart_toStartOf="@+id/imageView29"
+                app:layout_constraintTop_toTopOf="@+id/imageView29"
+                app:layout_constraintVertical_bias="0.135" />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t7"
+                app:layout_constraintStart_toEndOf="@+id/t7"
+                app:layout_constraintTop_toTopOf="@+id/t7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView29"
+                app:layout_constraintTop_toBottomOf="@+id/t7" />
+
+            <TextView
+                android:id="@+id/dd7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no7"
+                app:layout_constraintStart_toEndOf="@+id/no7"
+                app:layout_constraintTop_toTopOf="@+id/no7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm7"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/dd7"
+                app:layout_constraintStart_toEndOf="@+id/dd7"
+                app:layout_constraintTop_toTopOf="@+id/dd7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/mm7"
+                app:layout_constraintStart_toEndOf="@+id/mm7"
+                app:layout_constraintTop_toTopOf="@+id/mm7"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <!--8-->
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/but10" />
+
+            <TextView
+                android:id="@+id/introduce8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView30"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView30"
+                app:layout_constraintTop_toTopOf="@+id/imageView30" />
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t8"
+                app:layout_constraintStart_toEndOf="@+id/t8"
+                app:layout_constraintTop_toTopOf="@+id/t8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView30"
+                app:layout_constraintTop_toBottomOf="@+id/t8" />
+
+            <TextView
+                android:id="@+id/dd8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/no8"
+                app:layout_constraintStart_toEndOf="@+id/no8"
+                app:layout_constraintTop_toTopOf="@+id/no8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd8"
+                app:layout_constraintStart_toEndOf="@+id/dd8"
+                app:layout_constraintTop_toTopOf="@+id/dd8"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm8"
+                app:layout_constraintStart_toEndOf="@+id/mm8"
+                app:layout_constraintTop_toTopOf="@+id/mm8"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--9-->
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView30"
+                app:srcCompat="@drawable/but13" />
+
+            <TextView
+                android:id="@+id/introduce9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView31"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView31"
+                app:layout_constraintTop_toTopOf="@+id/imageView31" />
+
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t9"
+                app:layout_constraintStart_toEndOf="@+id/t9"
+                app:layout_constraintTop_toTopOf="@+id/t9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView31"
+                app:layout_constraintTop_toBottomOf="@+id/t9" />
+
+            <TextView
+                android:id="@+id/dd9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no9"
+                app:layout_constraintStart_toEndOf="@+id/no9"
+                app:layout_constraintTop_toTopOf="@+id/no9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd9"
+                app:layout_constraintStart_toEndOf="@+id/dd9"
+                app:layout_constraintTop_toTopOf="@+id/dd9"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm9"
+                app:layout_constraintStart_toEndOf="@+id/mm9"
+                app:layout_constraintTop_toTopOf="@+id/mm9"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--10-->
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31"
+                app:srcCompat="@drawable/but6" />
+
+            <TextView
+                android:id="@+id/introduce10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView32"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView32"
+                app:layout_constraintTop_toTopOf="@+id/imageView32" />
+
+            <TextView
+                android:id="@+id/t10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t10"
+                app:layout_constraintStart_toEndOf="@+id/t10"
+                app:layout_constraintTop_toTopOf="@+id/t10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView32"
+                app:layout_constraintTop_toBottomOf="@+id/t10" />
+
+            <TextView
+                android:id="@+id/dd10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no10"
+                app:layout_constraintStart_toEndOf="@+id/no10"
+                app:layout_constraintTop_toTopOf="@+id/no10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd10"
+                app:layout_constraintStart_toEndOf="@+id/dd10"
+                app:layout_constraintTop_toTopOf="@+id/dd10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm10"
+                app:layout_constraintStart_toEndOf="@+id/mm10"
+                app:layout_constraintTop_toTopOf="@+id/mm10"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--11-->
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32"
+                app:srcCompat="@drawable/but9" />
+
+            <TextView
+                android:id="@+id/introduce111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView33"
+                app:layout_constraintTop_toTopOf="@+id/imageView33" />
+
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce111"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t11"
+                app:layout_constraintStart_toEndOf="@+id/t11"
+                app:layout_constraintTop_toTopOf="@+id/t11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView33"
+                app:layout_constraintTop_toBottomOf="@+id/t11" />
+
+            <TextView
+                android:id="@+id/dd11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no11"
+                app:layout_constraintStart_toEndOf="@+id/no11"
+                app:layout_constraintTop_toTopOf="@+id/no11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd11"
+                app:layout_constraintStart_toEndOf="@+id/dd11"
+                app:layout_constraintTop_toTopOf="@+id/dd11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm11"
+                app:layout_constraintStart_toEndOf="@+id/mm11"
+                app:layout_constraintTop_toTopOf="@+id/mm11"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--12-->
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33"
+                app:srcCompat="@drawable/but10" />
+
+            <TextView
+                android:id="@+id/introduce12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView34"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView34"
+                app:layout_constraintTop_toTopOf="@+id/imageView34" />
+
+            <TextView
+                android:id="@+id/t12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce12"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t12"
+                app:layout_constraintStart_toEndOf="@+id/t12"
+                app:layout_constraintTop_toTopOf="@+id/t12"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView34"
+                app:layout_constraintTop_toBottomOf="@+id/t12" />
+
+            <TextView
+                android:id="@+id/dd12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no12"
+                app:layout_constraintStart_toEndOf="@+id/no12"
+                app:layout_constraintTop_toTopOf="@+id/no12"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd12"
+                app:layout_constraintStart_toEndOf="@+id/dd12"
+                app:layout_constraintTop_toTopOf="@+id/dd12"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm12"
+                app:layout_constraintStart_toEndOf="@+id/mm12"
+                app:layout_constraintTop_toTopOf="@+id/mm12"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--122-->
+            <ImageView
+                android:id="@+id/imageView343"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView34"
+                app:srcCompat="@drawable/but13" />
+
+            <TextView
+                android:id="@+id/introduce122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView343"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView343"
+                app:layout_constraintTop_toTopOf="@+id/imageView343" />
+
+            <TextView
+                android:id="@+id/t122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce122"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t122"
+                app:layout_constraintStart_toEndOf="@+id/t122"
+                app:layout_constraintTop_toTopOf="@+id/t122"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView343"
+                app:layout_constraintTop_toBottomOf="@+id/t122" />
+
+            <TextView
+                android:id="@+id/dd122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no122"
+                app:layout_constraintStart_toEndOf="@+id/no122"
+                app:layout_constraintTop_toTopOf="@+id/no122"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd122"
+                app:layout_constraintStart_toEndOf="@+id/dd122"
+                app:layout_constraintTop_toTopOf="@+id/dd122"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm122"
+                app:layout_constraintStart_toEndOf="@+id/mm122"
+                app:layout_constraintTop_toTopOf="@+id/mm122"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--123-->
+            <ImageView
+                android:id="@+id/imageView3433"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView343"
+                app:srcCompat="@drawable/but6" />
+
+            <TextView
+                android:id="@+id/introduce123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3433"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView3433"
+                app:layout_constraintTop_toTopOf="@+id/imageView3433" />
+
+            <TextView
+                android:id="@+id/t123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce123"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t123"
+                app:layout_constraintStart_toEndOf="@+id/t123"
+                app:layout_constraintTop_toTopOf="@+id/t123"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView3433"
+                app:layout_constraintTop_toBottomOf="@+id/t123" />
+
+            <TextView
+                android:id="@+id/dd123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no123"
+                app:layout_constraintStart_toEndOf="@+id/no123"
+                app:layout_constraintTop_toTopOf="@+id/no123"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd123"
+                app:layout_constraintStart_toEndOf="@+id/dd123"
+                app:layout_constraintTop_toTopOf="@+id/dd123"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm123"
+                app:layout_constraintStart_toEndOf="@+id/mm123"
+                app:layout_constraintTop_toTopOf="@+id/mm123"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <!--13-->
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3433"
+                app:srcCompat="@drawable/but11" />
+
+            <TextView
+                android:id="@+id/introduce13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView35"
+                app:layout_constraintHorizontal_bias="0.314"
+                app:layout_constraintStart_toStartOf="@+id/imageView35"
+                app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+            <TextView
+                android:id="@+id/t13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce13"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t13"
+                app:layout_constraintStart_toEndOf="@+id/t13"
+                app:layout_constraintTop_toTopOf="@+id/t13"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView35"
+                app:layout_constraintTop_toBottomOf="@+id/t13" />
+
+            <TextView
+                android:id="@+id/dd13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no13"
+                app:layout_constraintStart_toEndOf="@+id/no13"
+                app:layout_constraintTop_toTopOf="@+id/no13"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd13"
+                app:layout_constraintStart_toEndOf="@+id/dd13"
+                app:layout_constraintTop_toTopOf="@+id/dd13"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm13"
+                app:layout_constraintStart_toEndOf="@+id/mm13"
+                app:layout_constraintTop_toTopOf="@+id/mm13"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--14-->
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                app:srcCompat="@drawable/but10" />
+
+            <TextView
+                android:id="@+id/introduce14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView36"
+                app:layout_constraintTop_toTopOf="@+id/imageView36" />
+
+            <TextView
+                android:id="@+id/t14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce14"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t14"
+                app:layout_constraintStart_toEndOf="@+id/t14"
+                app:layout_constraintTop_toTopOf="@+id/t14"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView35"
+                app:layout_constraintTop_toBottomOf="@+id/t14" />
+
+            <TextView
+                android:id="@+id/dd14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no14"
+                app:layout_constraintStart_toEndOf="@+id/no14"
+                app:layout_constraintTop_toTopOf="@+id/no14"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd14"
+                app:layout_constraintStart_toEndOf="@+id/dd14"
+                app:layout_constraintTop_toTopOf="@+id/dd14"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm14"
+                app:layout_constraintStart_toEndOf="@+id/mm14"
+                app:layout_constraintTop_toTopOf="@+id/mm14"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--15-->
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView36"
+                app:srcCompat="@drawable/but12" />
+
+            <TextView
+                android:id="@+id/introduce15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView37"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView37"
+                app:layout_constraintTop_toTopOf="@+id/imageView37" />
+
+            <TextView
+                android:id="@+id/t15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce15"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t15"
+                app:layout_constraintStart_toEndOf="@+id/t15"
+                app:layout_constraintTop_toTopOf="@+id/t15"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView37"
+                app:layout_constraintTop_toBottomOf="@+id/t15" />
+
+            <TextView
+                android:id="@+id/dd15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no15"
+                app:layout_constraintStart_toEndOf="@+id/no15"
+                app:layout_constraintTop_toTopOf="@+id/no15"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd15"
+                app:layout_constraintStart_toEndOf="@+id/dd15"
+                app:layout_constraintTop_toTopOf="@+id/dd15"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm15"
+                app:layout_constraintStart_toEndOf="@+id/mm15"
+                app:layout_constraintTop_toTopOf="@+id/mm15"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--16-->
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView37"
+                app:srcCompat="@drawable/but10" />
+
+            <TextView
+                android:id="@+id/introduce16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView38"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+            <TextView
+                android:id="@+id/t16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce16"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t16"
+                app:layout_constraintStart_toEndOf="@+id/t16"
+                app:layout_constraintTop_toTopOf="@+id/t16"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toBottomOf="@+id/t16" />
+
+            <TextView
+                android:id="@+id/dd16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no16"
+                app:layout_constraintStart_toEndOf="@+id/no16"
+                app:layout_constraintTop_toTopOf="@+id/no16"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd16"
+                app:layout_constraintStart_toEndOf="@+id/dd16"
+                app:layout_constraintTop_toTopOf="@+id/dd16"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm16"
+                app:layout_constraintStart_toEndOf="@+id/mm16"
+                app:layout_constraintTop_toTopOf="@+id/mm16"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--17-->
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView38"
+                app:srcCompat="@drawable/but12" />
+
+            <TextView
+                android:id="@+id/introduce17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView39"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView39"
+                app:layout_constraintTop_toTopOf="@+id/imageView39" />
+
+            <TextView
+                android:id="@+id/t17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce17"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t17"
+                app:layout_constraintStart_toEndOf="@+id/t17"
+                app:layout_constraintTop_toTopOf="@+id/t17"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView39"
+                app:layout_constraintTop_toBottomOf="@+id/t17" />
+
+            <TextView
+                android:id="@+id/dd17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no17"
+                app:layout_constraintStart_toEndOf="@+id/no17"
+                app:layout_constraintTop_toTopOf="@+id/no17"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd17"
+                app:layout_constraintStart_toEndOf="@+id/dd17"
+                app:layout_constraintTop_toTopOf="@+id/dd17"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm17"
+                app:layout_constraintStart_toEndOf="@+id/mm17"
+                app:layout_constraintTop_toTopOf="@+id/mm17"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--18-->
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="389dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView39"
+                app:srcCompat="@drawable/but14" />
+
+            <TextView
+                android:id="@+id/introduce18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView41"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView41"
+                app:layout_constraintTop_toTopOf="@+id/imageView41" />
+
+            <TextView
+                android:id="@+id/t18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce18"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t18"
+                app:layout_constraintStart_toEndOf="@+id/t18"
+                app:layout_constraintTop_toTopOf="@+id/t18"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView41"
+                app:layout_constraintTop_toBottomOf="@+id/t18" />
+
+            <TextView
+                android:id="@+id/dd18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no18"
+                app:layout_constraintStart_toEndOf="@+id/no18"
+                app:layout_constraintTop_toTopOf="@+id/no18"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd18"
+                app:layout_constraintStart_toEndOf="@+id/dd18"
+                app:layout_constraintTop_toTopOf="@+id/dd18"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm18"
+                app:layout_constraintStart_toEndOf="@+id/mm18"
+                app:layout_constraintTop_toTopOf="@+id/mm18"
+                app:layout_constraintVertical_bias="1.0" />
+            <!--19-->
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="394dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41"
+                app:srcCompat="@drawable/but16" />
+
+            <TextView
+                android:id="@+id/introduce19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Pleae Wait"
+                app:layout_constraintEnd_toEndOf="@+id/imageView43"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="@+id/imageView43"
+                app:layout_constraintTop_toTopOf="@+id/imageView43" />
+
+            <TextView
+                android:id="@+id/t19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="สถานะขั้นตอน"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce19"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/status19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Please Wait"
+                app:layout_constraintBottom_toBottomOf="@+id/t19"
+                app:layout_constraintStart_toEndOf="@+id/t19"
+                app:layout_constraintTop_toTopOf="@+id/t19"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/no19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="16dp"
+                android:text="กำหนดการแจ้งตือน"
+                app:layout_constraintStart_toStartOf="@+id/imageView43"
+                app:layout_constraintTop_toBottomOf="@+id/t19" />
+
+            <TextView
+                android:id="@+id/dd19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/no19"
+                app:layout_constraintStart_toEndOf="@+id/no19"
+                app:layout_constraintTop_toTopOf="@+id/no19"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/mm19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dd19"
+                app:layout_constraintStart_toEndOf="@+id/dd19"
+                app:layout_constraintTop_toTopOf="@+id/dd19"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/yy19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mm19"
+                app:layout_constraintStart_toEndOf="@+id/mm19"
+                app:layout_constraintTop_toTopOf="@+id/mm19"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="125dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/backtomain"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/save1"
+        android:layout_width="113dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

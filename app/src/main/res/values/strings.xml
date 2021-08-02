@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">konklaV1</string>
+    <string name="title_activity_choose_status">ChooseStatus</string>
+</resources>

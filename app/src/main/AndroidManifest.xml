@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.tiwlynaja.admin.konklav1">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/web_hi_res_512"
+        android:label="tonkla"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".loading"></activity>
+        <activity android:name=".MainPageA" />
+        <activity android:name=".item_fertilizer" />
+        <activity android:name=".list_fertilizer" />
+        <activity android:name=".itemRice" />
+        <activity android:name=".liseRice" />
+        <activity android:name=".view.view_nochemical02" />
+        <activity android:name=".view.view_nochemical01" />
+        <activity android:name=".view.viewchemical02" />
+        <activity android:name=".view.viewchemical01" />
+        <activity android:name=".multiplan" />
+        <activity android:name=".listfram_multi" />
+        <activity android:name=".item_multi_Users" />
+        <activity android:name=".listmultiUser" />
+        <activity android:name=".Pest" />
+        <activity android:name=".itempaet" />
+        <activity android:name=".lisePaet" />
+        <activity android:name=".chemical.Noti_chemical2" />
+        <activity android:name=".chemical.Noti_chemical" />
+        <activity android:name=".chemical.L_edit_chemical" />
+        <activity android:name=".chemical.L_chemical" />
+        <activity android:name=".check.completed_chemical" />
+        <activity android:name=".NOchemical.Noti_nochemical2" />
+        <activity android:name=".NOchemical.Noti_nochemical" />
+        <activity android:name=".NOchemical.L_edit_NOchemical" />
+        <activity android:name=".NOchemical.L_NOchemical" />
+        <activity android:name=".itemframuser" />
+        <activity android:name=".LiseFramUser" />
+        <activity android:name=".check.checkRice" />
+        <activity android:name=".no_water" />
+        <activity android:name=".water_else" />
+        <activity android:name=".check.completed" />
+        <activity android:name=".check.Check_water" />
+        <activity android:name=".chemical.Calendar_Noti2" />
+        <activity android:name=".NOchemical.Calendar_Noti_chemical2" />
+        <activity android:name=".check.NO_chemical_N1" />
+        <activity android:name=".NOchemical.Calendar_Noti_chemical" />
+        <activity android:name=".edit_noChemical_plan" />
+        <activity android:name=".NO_Chemical_plan" />
+        <activity android:name=".edit_all_Plan" />
+        <activity android:name=".Plan_all" />
+        <activity android:name=".text" />
+        <activity android:name=".listAllPlan" />
+        <activity android:name=".ConcludePlan" />
+        <activity android:name=".editFram" />
+        <activity android:name=".Planting_activities" />
+        <activity android:name=".chemical.Calendar_Noti" />
+        <activity android:name=".choose_plan" />
+        <activity android:name=".Plan" />
+        <activity android:name=".Create_plots" />
+        <activity android:name=".name_user" />
+        <activity android:name=".listuser" />
+        <activity android:name=".MainPageApp" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".RegisterPage" />
+        <activity
+            android:name=".ChooseStatus"
+            android:label="@string/title_activity_choose_status"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".Noti_check_do.AlarmReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name=".Noti_check_do.NotificationService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Noti_check_do.ResultActivity"
+            android:excludeFromRecents="true"
+            android:label=".Noti@string/notification"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+
+        <receiver
+            android:name=".Noti_check_Water.AlarmReceiver_CKW"
+            android:enabled="true" />
+
+        <service
+            android:name=".Noti_check_Water.NotificationService_CKW"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Noti_check_Water.ResultActivity_CKW"
+            android:excludeFromRecents="true"
+            android:label=".Noti@string/notification"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+
+        <receiver
+            android:name=".Noti_check_Rice.AlarmReceiver_CKR"
+            android:enabled="true" />
+
+        <service
+            android:name=".Noti_check_Rice.NotificationService_CKR"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Noti_check_Rice.ResultActivity_CKR"
+            android:excludeFromRecents="true"
+            android:label=".Noti@string/notification"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+
+        <receiver
+            android:name=".Noti_check_completed.AlarmReceiver_CKC"
+            android:enabled="true" />
+
+        <service
+            android:name=".Noti_check_completed.NotificationService_CKC"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Noti_check_completed.ResultActivity_CKC"
+            android:excludeFromRecents="true"
+            android:label=".Noti@string/notification"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+    </application>
+
+</manifest>
